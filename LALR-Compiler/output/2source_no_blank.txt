@@ -1,0 +1,5 @@
+int gcd(int u, int v) {	int k;	k = u/u+v*v/u;	if(k > 8) {	return u;	}	else {	return v;	}
+}
+void main(void)
+{	int x; int y; int z;	x = input();	y = input();	z = input();	while(x < 10) {	x = x + 1;	while(y >= 10) {	y = y - 1;	}	if(z != x + y) {	z = x + y;	}	}	return z;
+}

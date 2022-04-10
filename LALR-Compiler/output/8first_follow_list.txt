@@ -1,0 +1,92 @@
+//first鹿
+FIRST(S) = { int、 void、 { }
+FIRST(additive-expression) = { (、 ID、 NUM、 IDF }
+FIRST(additive-expression') = { empty、 +、 - }
+FIRST(addop) = { +、 - }
+FIRST(arg-list) = { ID1、 (、 ID、 NUM、 IDF }
+FIRST(arg-list') = { ,、 empty }
+FIRST(args) = { empty、 ID1、 (、 ID、 NUM、 IDF }
+FIRST(call) = { IDF }
+FIRST(compound-stmt) = { { }
+FIRST(declaration) = { int、 void、 { }
+FIRST(declaration-list) = { int、 void、 { }
+FIRST(declaration-list') = { empty、 int、 void、 { }
+FIRST(expression) = { ID1、 (、 ID、 NUM、 IDF }
+FIRST(expression-stmt) = { ;、 ID1、 (、 ID、 NUM、 IDF }
+FIRST(factor) = { (、 ID、 NUM、 IDF }
+FIRST(fun-declaration) = { int、 void、 { }
+FIRST(iteration-stmt) = { while }
+FIRST(local-declarations) = { empty、 int、 void }
+FIRST(local-declarations') = { empty、 int、 void }
+FIRST(mulop) = { *、 / }
+FIRST(param) = { int、 void }
+FIRST(param') = { empty、 [ }
+FIRST(params) = { void、 int }
+FIRST(params-list) = { int、 void }
+FIRST(params-list') = { ,、 empty }
+FIRST(program) = { int、 void、 { }
+FIRST(relop) = { <=、 <、 >、 >=、 ==、 != }
+FIRST(return-stmt) = { return }
+FIRST(return-stmt') = { ;、 ID1、 (、 ID、 NUM、 IDF }
+FIRST(selection-stmt) = { if }
+FIRST(selection-stmt') = { empty、 else }
+FIRST(simple-expression) = { (、 ID、 NUM、 IDF }
+FIRST(simple-expression') = { empty、 <=、 <、 >、 >=、 ==、 != }
+FIRST(statement) = { {、 ;、 if、 while、 return、 ID1、 (、 ID、 NUM、 IDF }
+FIRST(statement-list) = { empty、 {、 ;、 if、 while、 return、 ID1、 (、 ID、 NUM、 IDF }
+FIRST(statement-list') = { empty、 {、 ;、 if、 while、 return、 ID1、 (、 ID、 NUM、 IDF }
+FIRST(term) = { (、 ID、 NUM、 IDF }
+FIRST(term') = { empty、 *、 / }
+FIRST(type-specifier) = { int、 void }
+FIRST(var) = { ID }
+FIRST(var') = { empty、 [ }
+FIRST(var-declaration) = { int、 void }
+FIRST(var-declaration') = { ;、 [ }
+FIRST(var1) = { ID1 }
+FIRST(var1') = { empty、 [ }
+//follow鹿
+FOLLOW(S) = { # }
+FOLLOW(additive-expression) = { <=、 <、 >、 >=、 ==、 !=、 ;、 )、 ]、 , }
+FOLLOW(additive-expression') = { <=、 <、 >、 >=、 ==、 !=、 ;、 )、 ]、 , }
+FOLLOW(addop) = { (、 ID、 NUM、 IDF }
+FOLLOW(arg-list) = { ) }
+FOLLOW(arg-list') = { ) }
+FOLLOW(args) = { ) }
+FOLLOW(call) = { *、 /、 +、 -、 <=、 <、 >、 >=、 ==、 !=、 ;、 )、 ]、 , }
+FOLLOW(compound-stmt) = { int、 void、 {、 #、 ;、 if、 while、 return、 ID1、 (、 ID、 NUM、 IDF、 }、 else }
+FOLLOW(declaration) = { int、 void、 {、 # }
+FOLLOW(declaration-list) = { # }
+FOLLOW(declaration-list') = { # }
+FOLLOW(expression) = { ;、 )、 ]、 , }
+FOLLOW(expression-stmt) = { {、 ;、 if、 while、 return、 ID1、 (、 ID、 NUM、 IDF、 }、 else }
+FOLLOW(factor) = { *、 /、 +、 -、 <=、 <、 >、 >=、 ==、 !=、 ;、 )、 ]、 , }
+FOLLOW(fun-declaration) = { int、 void、 {、 # }
+FOLLOW(iteration-stmt) = { {、 ;、 if、 while、 return、 ID1、 (、 ID、 NUM、 IDF、 }、 else }
+FOLLOW(local-declarations) = { {、 ;、 if、 while、 return、 ID1、 (、 ID、 NUM、 IDF、 } }
+FOLLOW(local-declarations') = { {、 ;、 if、 while、 return、 ID1、 (、 ID、 NUM、 IDF、 } }
+FOLLOW(mulop) = { (、 ID、 NUM、 IDF }
+FOLLOW(param) = { ,、 ) }
+FOLLOW(param') = { ,、 ) }
+FOLLOW(params) = { ) }
+FOLLOW(params-list) = { ) }
+FOLLOW(params-list') = { ) }
+FOLLOW(program) = { # }
+FOLLOW(relop) = { (、 ID、 NUM、 IDF }
+FOLLOW(return-stmt) = { {、 ;、 if、 while、 return、 ID1、 (、 ID、 NUM、 IDF、 }、 else }
+FOLLOW(return-stmt') = { {、 ;、 if、 while、 return、 ID1、 (、 ID、 NUM、 IDF、 }、 else }
+FOLLOW(selection-stmt) = { {、 ;、 if、 while、 return、 ID1、 (、 ID、 NUM、 IDF、 }、 else }
+FOLLOW(selection-stmt') = { {、 ;、 if、 while、 return、 ID1、 (、 ID、 NUM、 IDF、 }、 else }
+FOLLOW(simple-expression) = { ;、 )、 ]、 , }
+FOLLOW(simple-expression') = { ;、 )、 ]、 , }
+FOLLOW(statement) = { {、 ;、 if、 while、 return、 ID1、 (、 ID、 NUM、 IDF、 }、 else }
+FOLLOW(statement-list) = { } }
+FOLLOW(statement-list') = { } }
+FOLLOW(term) = { +、 -、 <=、 <、 >、 >=、 ==、 !=、 ;、 )、 ]、 , }
+FOLLOW(term') = { +、 -、 <=、 <、 >、 >=、 ==、 !=、 ;、 )、 ]、 , }
+FOLLOW(type-specifier) = { ID、 IDF }
+FOLLOW(var) = { *、 /、 +、 -、 <=、 <、 >、 >=、 ==、 !=、 ;、 )、 ]、 , }
+FOLLOW(var') = { *、 /、 +、 -、 <=、 <、 >、 >=、 ==、 !=、 ;、 )、 ]、 , }
+FOLLOW(var-declaration) = { int、 void、 {、 #、 ;、 if、 while、 return、 ID1、 (、 ID、 NUM、 IDF、 } }
+FOLLOW(var-declaration') = { int、 void、 {、 #、 ;、 if、 while、 return、 ID1、 (、 ID、 NUM、 IDF、 } }
+FOLLOW(var1) = { = }
+FOLLOW(var1') = { = }

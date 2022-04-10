@@ -1,0 +1,24 @@
+函数名：#
+变量名               类型                属性              参数个数        
+gcd                 int                 func                2                   
+input               *                   func                0                   
+main                void                func                0                   
+output              *                   func                0                   
+
+
+函数名：gcd
+变量名               类型                属性              参数个数        
+gcd                 int                 func                2                   
+k                   int                 var                 0                   
+u                   int                 var                 0                   
+v                   int                 var                 0                   
+
+
+函数名：main
+变量名               类型                属性              参数个数        
+main                void                func                0                   
+x                   int                 var                 0                   
+y                   int                 var                 0                   
+z                   int                 var                 0                   
+
+

@@ -1,0 +1,256 @@
+type-specifier -> INT
+type-specifier -> INT
+params-list -> param
+type-specifier -> INT
+params-list -> params-list , param
+params -> params-list
+fun-declaration -> type-specifier ID ( params )
+declaration -> fun-declaration
+declaration-list -> declaration
+local-declarations -> empty
+type-specifier -> INT
+var-declaration -> type-specifier ID ;
+local-declarations -> local-declarations var-declaration
+statement-list -> empty
+var -> ID
+var -> ID
+factor -> var
+term -> factor
+mulop -> /
+var -> ID
+factor -> var
+term -> term mulop factor
+additive-expression -> term
+addop -> +
+var -> ID
+factor -> var
+term -> factor
+mulop -> *
+var -> ID
+factor -> var
+term -> term mulop factor
+mulop -> /
+var -> ID
+factor -> var
+term -> term mulop factor
+additive-expression -> additive-expression addop term
+simple-expression -> additive-expression
+expression -> simple-expression
+expression -> var = expression
+expression-stmt -> expression ;
+statement -> expression-stmt
+statement-list -> statement-list statement
+var -> ID
+factor -> var
+term -> factor
+additive-expression -> term
+relop -> >
+factor -> NUM
+term -> factor
+additive-expression -> term
+simple-expression -> additive-expression relop additive-expression
+expression -> simple-expression
+local-declarations -> empty
+statement-list -> empty
+var -> ID
+factor -> var
+term -> factor
+additive-expression -> term
+simple-expression -> additive-expression
+expression -> simple-expression
+return-stmt -> RETURN expression ;
+statement -> return-stmt
+statement-list -> statement-list statement
+compound-stmt -> { local-declarations statement-list }
+statement -> compound-stmt
+local-declarations -> empty
+statement-list -> empty
+var -> ID
+factor -> var
+term -> factor
+additive-expression -> term
+simple-expression -> additive-expression
+expression -> simple-expression
+return-stmt -> RETURN expression ;
+statement -> return-stmt
+statement-list -> statement-list statement
+compound-stmt -> { local-declarations statement-list }
+statement -> compound-stmt
+selection-stmts -> ELSE statement
+selection-stmt -> IF ( expression ) statement selection-stmts
+statement -> selection-stmt
+statement-list -> statement-list statement
+compound-stmt -> { local-declarations statement-list }
+fun-declaration -> compound-stmt
+declaration -> fun-declaration
+declaration-list -> declaration-list declaration
+type-specifier -> VOID
+params -> VOID
+fun-declaration -> type-specifier ID ( params )
+declaration -> fun-declaration
+declaration-list -> declaration-list declaration
+local-declarations -> empty
+type-specifier -> INT
+var-declaration -> type-specifier ID ;
+local-declarations -> local-declarations var-declaration
+type-specifier -> INT
+var-declaration -> type-specifier ID ;
+local-declarations -> local-declarations var-declaration
+type-specifier -> INT
+var-declaration -> type-specifier ID ;
+local-declarations -> local-declarations var-declaration
+statement-list -> empty
+var -> ID
+args -> empty
+call -> ID ( args )
+factor -> call
+term -> factor
+additive-expression -> term
+simple-expression -> additive-expression
+expression -> simple-expression
+expression -> var = expression
+expression-stmt -> expression ;
+statement -> expression-stmt
+statement-list -> statement-list statement
+var -> ID
+args -> empty
+call -> ID ( args )
+factor -> call
+term -> factor
+additive-expression -> term
+simple-expression -> additive-expression
+expression -> simple-expression
+expression -> var = expression
+expression-stmt -> expression ;
+statement -> expression-stmt
+statement-list -> statement-list statement
+var -> ID
+args -> empty
+call -> ID ( args )
+factor -> call
+term -> factor
+additive-expression -> term
+simple-expression -> additive-expression
+expression -> simple-expression
+expression -> var = expression
+expression-stmt -> expression ;
+statement -> expression-stmt
+statement-list -> statement-list statement
+var -> ID
+factor -> var
+term -> factor
+additive-expression -> term
+relop -> <
+factor -> NUM
+term -> factor
+additive-expression -> term
+simple-expression -> additive-expression relop additive-expression
+expression -> simple-expression
+local-declarations -> empty
+statement-list -> empty
+var -> ID
+var -> ID
+factor -> var
+term -> factor
+additive-expression -> term
+addop -> +
+factor -> NUM
+term -> factor
+additive-expression -> additive-expression addop term
+simple-expression -> additive-expression
+expression -> simple-expression
+expression -> var = expression
+expression-stmt -> expression ;
+statement -> expression-stmt
+statement-list -> statement-list statement
+var -> ID
+factor -> var
+term -> factor
+additive-expression -> term
+relop -> >=
+factor -> NUM
+term -> factor
+additive-expression -> term
+simple-expression -> additive-expression relop additive-expression
+expression -> simple-expression
+local-declarations -> empty
+statement-list -> empty
+var -> ID
+var -> ID
+factor -> var
+term -> factor
+additive-expression -> term
+addop -> -
+factor -> NUM
+term -> factor
+additive-expression -> additive-expression addop term
+simple-expression -> additive-expression
+expression -> simple-expression
+expression -> var = expression
+expression-stmt -> expression ;
+statement -> expression-stmt
+statement-list -> statement-list statement
+compound-stmt -> { local-declarations statement-list }
+statement -> compound-stmt
+iteration-stmt -> WHILE ( expression ) statement
+statement -> iteration-stmt
+statement-list -> statement-list statement
+var -> ID
+factor -> var
+term -> factor
+additive-expression -> term
+relop -> !=
+var -> ID
+factor -> var
+term -> factor
+additive-expression -> term
+addop -> +
+var -> ID
+factor -> var
+term -> factor
+additive-expression -> additive-expression addop term
+simple-expression -> additive-expression relop additive-expression
+expression -> simple-expression
+local-declarations -> empty
+statement-list -> empty
+var -> ID
+var -> ID
+factor -> var
+term -> factor
+additive-expression -> term
+addop -> +
+var -> ID
+factor -> var
+term -> factor
+additive-expression -> additive-expression addop term
+simple-expression -> additive-expression
+expression -> simple-expression
+expression -> var = expression
+expression-stmt -> expression ;
+statement -> expression-stmt
+statement-list -> statement-list statement
+compound-stmt -> { local-declarations statement-list }
+statement -> compound-stmt
+selection-stmts -> empty
+selection-stmt -> IF ( expression ) statement selection-stmts
+statement -> selection-stmt
+statement-list -> statement-list statement
+compound-stmt -> { local-declarations statement-list }
+statement -> compound-stmt
+iteration-stmt -> WHILE ( expression ) statement
+statement -> iteration-stmt
+statement-list -> statement-list statement
+var -> ID
+factor -> var
+term -> factor
+additive-expression -> term
+simple-expression -> additive-expression
+expression -> simple-expression
+return-stmt -> RETURN expression ;
+statement -> return-stmt
+statement-list -> statement-list statement
+compound-stmt -> { local-declarations statement-list }
+fun-declaration -> compound-stmt
+declaration -> fun-declaration
+declaration-list -> declaration-list declaration
+program -> declaration-list

@@ -1,0 +1,377 @@
+ 0:|	program
+ 1:|	declaration-list
+ 2:|	|	declaration-list
+ 3:|	|	|	declaration-list
+ 4:|	|	|	|	declaration-list
+ 5:|	|	|	|	|	declaration
+ 6:|	|	|	|	|	|	fun-declaration
+ 7:|	|	|	|	|	|	|	RBPAREN
+ 7:|	|	|	|	|	|	|	type-specifier
+ 8:|	|	|	|	|	|	|	|	RBPAREN
+ 7:|	|	|	|	|	|	|	params-list
+ 8:|	|	|	|	|	|	|	|	RBPAREN
+ 7:|	|	|	|	|	|	|	params
+ 8:|	|	|	|	|	|	|	|	params-list
+ 9:|	|	|	|	|	|	|	|	|	RBPAREN
+ 9:|	|	|	|	|	|	|	|	|	type-specifier
+10:|	|	|	|	|	|	|	|	|	|	RBPAREN
+ 9:|	|	|	|	|	|	|	|	|	RBPAREN
+ 7:|	|	|	|	|	|	|	RBPAREN
+ 4:|	|	|	|	declaration
+ 5:|	|	|	|	|	fun-declaration
+ 6:|	|	|	|	|	|	compound-stmt
+ 7:|	|	|	|	|	|	|	RBPAREN
+ 7:|	|	|	|	|	|	|	local-declarations
+ 8:|	|	|	|	|	|	|	|	local-declarations
+ 8:|	|	|	|	|	|	|	|	var-declaration
+ 9:|	|	|	|	|	|	|	|	|	type-specifier
+10:|	|	|	|	|	|	|	|	|	|	RBPAREN
+ 9:|	|	|	|	|	|	|	|	|	RBPAREN
+ 9:|	|	|	|	|	|	|	|	|	RBPAREN
+ 7:|	|	|	|	|	|	|	statement-list
+ 8:|	|	|	|	|	|	|	|	statement-list
+ 9:|	|	|	|	|	|	|	|	|	statement-list
+ 9:|	|	|	|	|	|	|	|	|	statement
+10:|	|	|	|	|	|	|	|	|	|	expression-stmt
+11:|	|	|	|	|	|	|	|	|	|	|	expression
+12:|	|	|	|	|	|	|	|	|	|	|	|	var
+13:|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+12:|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+12:|	|	|	|	|	|	|	|	|	|	|	|	expression
+13:|	|	|	|	|	|	|	|	|	|	|	|	|	simple-expression
+14:|	|	|	|	|	|	|	|	|	|	|	|	|	|	additive-expression
+15:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	additive-expression
+16:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	term
+17:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	term
+18:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	factor
+19:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	var
+20:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+17:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	mulop
+18:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+17:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	factor
+18:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	var
+19:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+15:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	addop
+16:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+15:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	term
+16:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	term
+17:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	term
+18:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	factor
+19:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	var
+20:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+17:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	mulop
+18:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+17:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	factor
+18:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	var
+19:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+16:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	mulop
+17:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+16:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	factor
+17:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	var
+18:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+11:|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+ 8:|	|	|	|	|	|	|	|	statement
+ 9:|	|	|	|	|	|	|	|	|	selection-stmt
+10:|	|	|	|	|	|	|	|	|	|	RBPAREN
+10:|	|	|	|	|	|	|	|	|	|	RBPAREN
+10:|	|	|	|	|	|	|	|	|	|	expression
+11:|	|	|	|	|	|	|	|	|	|	|	simple-expression
+12:|	|	|	|	|	|	|	|	|	|	|	|	additive-expression
+13:|	|	|	|	|	|	|	|	|	|	|	|	|	term
+14:|	|	|	|	|	|	|	|	|	|	|	|	|	|	factor
+15:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	var
+16:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+12:|	|	|	|	|	|	|	|	|	|	|	|	relop
+13:|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+12:|	|	|	|	|	|	|	|	|	|	|	|	additive-expression
+13:|	|	|	|	|	|	|	|	|	|	|	|	|	term
+14:|	|	|	|	|	|	|	|	|	|	|	|	|	|	factor
+15:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+10:|	|	|	|	|	|	|	|	|	|	RBPAREN
+10:|	|	|	|	|	|	|	|	|	|	statement
+11:|	|	|	|	|	|	|	|	|	|	|	compound-stmt
+12:|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+12:|	|	|	|	|	|	|	|	|	|	|	|	local-declarations
+12:|	|	|	|	|	|	|	|	|	|	|	|	statement-list
+13:|	|	|	|	|	|	|	|	|	|	|	|	|	statement-list
+13:|	|	|	|	|	|	|	|	|	|	|	|	|	statement
+14:|	|	|	|	|	|	|	|	|	|	|	|	|	|	return-stmt
+15:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+15:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	expression
+16:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	simple-expression
+17:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	additive-expression
+18:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	term
+19:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	factor
+20:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	var
+21:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+15:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+12:|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+10:|	|	|	|	|	|	|	|	|	|	selection-stmts
+11:|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+11:|	|	|	|	|	|	|	|	|	|	|	statement
+12:|	|	|	|	|	|	|	|	|	|	|	|	compound-stmt
+13:|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+13:|	|	|	|	|	|	|	|	|	|	|	|	|	local-declarations
+13:|	|	|	|	|	|	|	|	|	|	|	|	|	statement-list
+14:|	|	|	|	|	|	|	|	|	|	|	|	|	|	statement-list
+14:|	|	|	|	|	|	|	|	|	|	|	|	|	|	statement
+15:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	return-stmt
+16:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+16:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	expression
+17:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	simple-expression
+18:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	additive-expression
+19:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	term
+20:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	factor
+21:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	var
+22:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+16:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+13:|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+ 7:|	|	|	|	|	|	|	RBPAREN
+ 3:|	|	|	declaration
+ 4:|	|	|	|	fun-declaration
+ 5:|	|	|	|	|	type-specifier
+ 6:|	|	|	|	|	|	RBPAREN
+ 5:|	|	|	|	|	RBPAREN
+ 5:|	|	|	|	|	RBPAREN
+ 5:|	|	|	|	|	params
+ 6:|	|	|	|	|	|	RBPAREN
+ 5:|	|	|	|	|	RBPAREN
+ 2:|	|	declaration
+ 3:|	|	|	fun-declaration
+ 4:|	|	|	|	compound-stmt
+ 5:|	|	|	|	|	RBPAREN
+ 5:|	|	|	|	|	local-declarations
+ 6:|	|	|	|	|	|	local-declarations
+ 7:|	|	|	|	|	|	|	local-declarations
+ 8:|	|	|	|	|	|	|	|	local-declarations
+ 8:|	|	|	|	|	|	|	|	var-declaration
+ 9:|	|	|	|	|	|	|	|	|	type-specifier
+10:|	|	|	|	|	|	|	|	|	|	RBPAREN
+ 9:|	|	|	|	|	|	|	|	|	RBPAREN
+ 9:|	|	|	|	|	|	|	|	|	RBPAREN
+ 7:|	|	|	|	|	|	|	var-declaration
+ 8:|	|	|	|	|	|	|	|	type-specifier
+ 9:|	|	|	|	|	|	|	|	|	RBPAREN
+ 8:|	|	|	|	|	|	|	|	RBPAREN
+ 8:|	|	|	|	|	|	|	|	RBPAREN
+ 6:|	|	|	|	|	|	var-declaration
+ 7:|	|	|	|	|	|	|	type-specifier
+ 8:|	|	|	|	|	|	|	|	RBPAREN
+ 7:|	|	|	|	|	|	|	RBPAREN
+ 7:|	|	|	|	|	|	|	RBPAREN
+ 5:|	|	|	|	|	statement-list
+ 6:|	|	|	|	|	|	statement-list
+ 7:|	|	|	|	|	|	|	statement-list
+ 8:|	|	|	|	|	|	|	|	statement-list
+ 9:|	|	|	|	|	|	|	|	|	statement-list
+10:|	|	|	|	|	|	|	|	|	|	statement-list
+10:|	|	|	|	|	|	|	|	|	|	statement
+11:|	|	|	|	|	|	|	|	|	|	|	expression-stmt
+12:|	|	|	|	|	|	|	|	|	|	|	|	expression
+13:|	|	|	|	|	|	|	|	|	|	|	|	|	var
+14:|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+13:|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+13:|	|	|	|	|	|	|	|	|	|	|	|	|	expression
+14:|	|	|	|	|	|	|	|	|	|	|	|	|	|	simple-expression
+15:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	additive-expression
+16:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	term
+17:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	factor
+18:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	call
+19:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+19:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+19:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	args
+19:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+12:|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+ 9:|	|	|	|	|	|	|	|	|	statement
+10:|	|	|	|	|	|	|	|	|	|	expression-stmt
+11:|	|	|	|	|	|	|	|	|	|	|	expression
+12:|	|	|	|	|	|	|	|	|	|	|	|	var
+13:|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+12:|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+12:|	|	|	|	|	|	|	|	|	|	|	|	expression
+13:|	|	|	|	|	|	|	|	|	|	|	|	|	simple-expression
+14:|	|	|	|	|	|	|	|	|	|	|	|	|	|	additive-expression
+15:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	term
+16:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	factor
+17:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	call
+18:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+18:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+18:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	args
+18:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+11:|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+ 8:|	|	|	|	|	|	|	|	statement
+ 9:|	|	|	|	|	|	|	|	|	expression-stmt
+10:|	|	|	|	|	|	|	|	|	|	expression
+11:|	|	|	|	|	|	|	|	|	|	|	var
+12:|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+11:|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+11:|	|	|	|	|	|	|	|	|	|	|	expression
+12:|	|	|	|	|	|	|	|	|	|	|	|	simple-expression
+13:|	|	|	|	|	|	|	|	|	|	|	|	|	additive-expression
+14:|	|	|	|	|	|	|	|	|	|	|	|	|	|	term
+15:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	factor
+16:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	call
+17:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+17:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+17:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	args
+17:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+10:|	|	|	|	|	|	|	|	|	|	RBPAREN
+ 7:|	|	|	|	|	|	|	statement
+ 8:|	|	|	|	|	|	|	|	iteration-stmt
+ 9:|	|	|	|	|	|	|	|	|	RBPAREN
+ 9:|	|	|	|	|	|	|	|	|	RBPAREN
+ 9:|	|	|	|	|	|	|	|	|	expression
+10:|	|	|	|	|	|	|	|	|	|	simple-expression
+11:|	|	|	|	|	|	|	|	|	|	|	additive-expression
+12:|	|	|	|	|	|	|	|	|	|	|	|	term
+13:|	|	|	|	|	|	|	|	|	|	|	|	|	factor
+14:|	|	|	|	|	|	|	|	|	|	|	|	|	|	var
+15:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+11:|	|	|	|	|	|	|	|	|	|	|	relop
+12:|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+11:|	|	|	|	|	|	|	|	|	|	|	additive-expression
+12:|	|	|	|	|	|	|	|	|	|	|	|	term
+13:|	|	|	|	|	|	|	|	|	|	|	|	|	factor
+14:|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+ 9:|	|	|	|	|	|	|	|	|	RBPAREN
+ 9:|	|	|	|	|	|	|	|	|	statement
+10:|	|	|	|	|	|	|	|	|	|	compound-stmt
+11:|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+11:|	|	|	|	|	|	|	|	|	|	|	local-declarations
+11:|	|	|	|	|	|	|	|	|	|	|	statement-list
+12:|	|	|	|	|	|	|	|	|	|	|	|	statement-list
+13:|	|	|	|	|	|	|	|	|	|	|	|	|	statement-list
+14:|	|	|	|	|	|	|	|	|	|	|	|	|	|	statement-list
+14:|	|	|	|	|	|	|	|	|	|	|	|	|	|	statement
+15:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	expression-stmt
+16:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	expression
+17:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	var
+18:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+17:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+17:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	expression
+18:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	simple-expression
+19:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	additive-expression
+20:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	additive-expression
+21:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	term
+22:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	factor
+23:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	var
+24:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+20:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	addop
+21:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+20:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	term
+21:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	factor
+22:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+16:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+13:|	|	|	|	|	|	|	|	|	|	|	|	|	statement
+14:|	|	|	|	|	|	|	|	|	|	|	|	|	|	iteration-stmt
+15:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+15:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+15:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	expression
+16:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	simple-expression
+17:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	additive-expression
+18:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	term
+19:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	factor
+20:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	var
+21:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+17:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	relop
+18:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+17:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	additive-expression
+18:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	term
+19:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	factor
+20:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+15:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+15:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	statement
+16:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	compound-stmt
+17:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+17:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	local-declarations
+17:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	statement-list
+18:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	statement-list
+18:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	statement
+19:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	expression-stmt
+20:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	expression
+21:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	var
+22:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+21:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+21:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	expression
+22:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	simple-expression
+23:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	additive-expression
+24:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	additive-expression
+25:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	term
+26:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	factor
+27:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	var
+28:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+24:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	addop
+25:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+24:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	term
+25:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	factor
+26:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+20:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+17:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+12:|	|	|	|	|	|	|	|	|	|	|	|	statement
+13:|	|	|	|	|	|	|	|	|	|	|	|	|	selection-stmt
+14:|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+14:|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+14:|	|	|	|	|	|	|	|	|	|	|	|	|	|	expression
+15:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	simple-expression
+16:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	additive-expression
+17:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	term
+18:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	factor
+19:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	var
+20:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+16:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	relop
+17:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+16:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	additive-expression
+17:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	additive-expression
+18:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	term
+19:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	factor
+20:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	var
+21:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+17:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	addop
+18:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+17:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	term
+18:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	factor
+19:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	var
+20:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+14:|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+14:|	|	|	|	|	|	|	|	|	|	|	|	|	|	statement
+15:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	compound-stmt
+16:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+16:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	local-declarations
+16:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	statement-list
+17:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	statement-list
+17:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	statement
+18:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	expression-stmt
+19:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	expression
+20:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	var
+21:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+20:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+20:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	expression
+21:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	simple-expression
+22:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	additive-expression
+23:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	additive-expression
+24:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	term
+25:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	factor
+26:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	var
+27:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+23:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	addop
+24:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+23:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	term
+24:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	factor
+25:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	var
+26:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+19:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+16:|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+14:|	|	|	|	|	|	|	|	|	|	|	|	|	|	selection-stmts
+11:|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+ 6:|	|	|	|	|	|	statement
+ 7:|	|	|	|	|	|	|	return-stmt
+ 8:|	|	|	|	|	|	|	|	RBPAREN
+ 8:|	|	|	|	|	|	|	|	expression
+ 9:|	|	|	|	|	|	|	|	|	simple-expression
+10:|	|	|	|	|	|	|	|	|	|	additive-expression
+11:|	|	|	|	|	|	|	|	|	|	|	term
+12:|	|	|	|	|	|	|	|	|	|	|	|	factor
+13:|	|	|	|	|	|	|	|	|	|	|	|	|	var
+14:|	|	|	|	|	|	|	|	|	|	|	|	|	|	RBPAREN
+ 8:|	|	|	|	|	|	|	|	RBPAREN
+ 5:|	|	|	|	|	RBPAREN
