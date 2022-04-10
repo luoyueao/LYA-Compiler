@@ -1,0 +1,26 @@
+(100) Prog gcd
+(101) T0 := v == 0
+(102) if T0==1 Goto 104
+(103) Goto 106
+(104) return u
+(105) Goto 114
+(106) T1 := u / u
+(107) T2 := v * v
+(108) T3 := T2 / u
+(109) T4 := T1 + T3
+(110) param v
+(111) param T4
+(112) T5 := call gcd
+(113) return T5
+(114) Prog main
+(115) T6 := call input
+(116) x := T6
+(117) T7 := call input
+(118) y := T7
+(119) param x
+(120) param y
+(121) T8 := call gcd
+(122) param T8
+(123) T9 := call output
+(124) T10 := 1 + 1
+(125) x := T10
